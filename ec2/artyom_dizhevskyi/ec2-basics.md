@@ -1,8 +1,9 @@
 # EC2
 
 **Amazon Elastic Compute Cloud (Amazon EC2)** is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. Amazon EC2’s simple web service interface allows you to obtain and configure capacity with minimal friction. It provides you with complete control of your computing resources and lets you run on Amazon’s proven computing environment.
+
 <br />
-<br />
+
 ### EC2 types:
 
 ------------
@@ -14,9 +15,10 @@
 
 **Scheduled Reserved Instances** -  almost the same as a **Reserved Instances** but can be purchaised for a smaller term with recurring launches (daily, weekly or monthly).  They are available in the following Regions: US East (N. Virginia), US West (Oregon), and Europe (Ireland).
 
-**Dedicated hosts** - physical server. EC2 types above will work as virtual servers, but dedicated server gives you much more control and elasticity. You can build your own virtual instances clusters on it.
+**Dedicated hosts** - physical server. EC2 types above will work as virtual servers, but dedicated server gives you much more control and elasticity. You can build your own virtual instances cluster on it.
+
 <br />
-<br />
+
 ### EC Instance types
 
 ------------
@@ -28,14 +30,14 @@ Instance type naming schema:
 #### Types:
 **A, T, M** - General purpose
 
-**C** - Comptue Optimized
+**C** - Compute Optimized
 
 **R, X, High Memory, z1d** - Memory Optimized
 
 **P, Inf, G, F** - Accelerated Computing (GPU Optimized)
 
 **I, D, H** - Storage Optimized
-<br />
+
 <br />
 
 #### Size types:
