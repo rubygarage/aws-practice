@@ -1,0 +1,45 @@
+Snapshot - reserve copy of Volume
+
+AMI (Amazon Machine Image) - reserve(golden) copy of Instance. May be provided by aws(basic) or other users(custom).
+
+Tagging - https://aws.amazon.com/answers/account-management/aws-tagging-strategies/
+
+Security Group (SG) - like a regular firewall (e.g. iptables), but simplified and with gui support from Amazon.
+
+Elastic IP - is a static IPv4 address which associated with your aws account and can be assigned to any of your instance.
+
+Key pair - SSH key pair (public and private) which can be used as login key for your instances which were configured to
+using that pair and were placed in AZ where this key was created.
+
+EC2 Cloud Watch monitoring:
+1. Basic - every 5 minute
+2. Detailed - every minute. Additional charges apply.
+
+Important notes:
+- If we STOP and START our instance, then server place of this instance will be changed.
+(It will be launched from another datacenter). IPv4 Public IP also will be changed.
+
+- If we REBOOT our instance, then server place WON'T be changed. IPv4 Public IP WON'T be changed.
+
+- Private IP of instance WON'T be changed till termination.
+
+
+====================================================================================
+
+EC2 Instance User Data example:
+------------------------------
+#!/bin/bash
+
+yum update -y
+yum install httpd -y
+
+systemctl start httpd
+systemctl enable httpd
+------------------------------
+EC2 instance will automatically install and launch apache server on self initializing.
+Works like docker entrypoint.
+
+====================================================================================
+
+Instance metadata endpoint: http://169.254.169.254/latest/meta-data/
+Available inside any instance.
