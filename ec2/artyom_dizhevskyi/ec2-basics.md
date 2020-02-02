@@ -7,11 +7,11 @@
 ### EC2 types:
 
 ------------
-**Instance** - most popular type. On demand server instance with hourly pay model. Suitable for all tasks general purpose tasks.
+**Instance** - most popular type. On demand server instance with hourly payment model. Suitable for all general purpose tasks.
 
 **Spot** - let you take advantage of unused EC2 capacity in the AWS cloud. Spot Instances are available at up to a 90% discount compared to On-Demand prices. Hourly pricing model. Works like stocks market: less demand - less price and vice versa. You can set a bid price and if the spot price is less than yours, you will receive the instance(s) you need. If the spot price has risen higher than the bid you set, then all your spot servers will be automaticaly terminated and payment for the last hour of terminated spot instance won't be charged.
 
-**Reserved Instances** - contract based instances with term from 1 month to 3 years. Can be payed by 3 ways: No Upfront - all sum at the end of contract; Partial Upfront - pay by parts; All Upfront - all sum right away (Most cheepest way).
+**Reserved Instances** - contract based instances with term from 1 month to 3 years. Can be payed by 3 ways: No Upfront - all sum at the end of contract; Partial Upfront - pay by parts; All Upfront - all sum right away (Most cheepest way). Can be much more beneficial in long term than on demand instance with the same term!
 
 **Scheduled Reserved Instances** -  almost the same as a **Reserved Instances** but can be purchaised for a smaller term with recurring launches (daily, weekly or monthly).  They are available in the following Regions: US East (N. Virginia), US West (Oregon), and Europe (Ireland).
 
@@ -22,7 +22,7 @@
 ### EC Instance types
 
 ------------
-Instance type naming schema:
+Instance types naming schema:
 **type(+generation).(multiplier+)sizetype**
 
 ![](https://imgur.com/LRLKOWT.png)
