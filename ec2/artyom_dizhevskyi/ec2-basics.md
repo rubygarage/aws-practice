@@ -4,7 +4,7 @@
 
 <br />
 
-### EC2 types:
+### EC2 launch types:
 
 ------------
 **Instance** - most popular type. On demand server instance with hourly payment model. Suitable for all general purpose tasks.
